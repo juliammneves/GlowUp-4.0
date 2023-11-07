@@ -1,0 +1,305 @@
+@import '_colors';
+
+nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1.5% 10%;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   transition: all 0.3s ease-in-out;
+   z-index: 100;
+
+   &.with-bg {
+      background-color: $footer-color;
+   }
+
+   &.nav-bg {
+      background-color: $footer-color;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   }
+
+   &.hidden {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+   }
+
+   .logo {
+      h1 {
+         font-size: 35px;
+         color: $header-color;
+         margin: 0;
+
+         span {
+            color: $accent-color;
+         }
+      }
+   }
+
+   ul {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+
+      li {
+         list-style: none;
+         display: inline-block;
+
+
+         a {
+            font-weight: 500;
+            transition: 0.3s;
+            color: $header-color;
+            margin: 0;
+
+            padding: 0;
+
+            &:hover {
+               color: $accent-color;
+
+               &::after {
+                  transform-origin: left;
+                  transform: scaleX(1);
+               }
+            }
+
+            &::after {
+               content: '';
+               display: block;
+               left: 0;
+               bottom: -6px;
+               width: 100%;
+               height: 3px;
+               background: $accent-color;
+               border-radius: 5px;
+               transform-origin: right;
+               transform: scaleX(0);
+               transition: transform 0.3s;
+            }
+         }
+      }
+   }
+
+
+   .botoes {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      .light {
+         color: $header-color;
+         cursor: pointer;
+         transition: 0.3s;
+         font-size: 30px;
+
+         &:hover {
+            color: $accent-color;
+         }
+      }
+
+      .button,
+      .button1 {
+         padding: 3px 25px;
+         background-color: transparent;
+         border: 4px solid $accent-color;
+         color: $accent-color;
+         font-size: 18px;
+         font-weight: 500;
+         border-radius: 20px;
+         cursor: pointer;
+         transition: 0.3s;
+
+         &:hover {
+            background-color: $accent-color;
+            color: $header-color;
+         }
+
+
+      }
+   }
+
+   button {
+      background: none;
+      border: none;
+   }
+
+   .menu_mobile {
+      display: none;
+
+      .button1 {
+         display: none;
+      }
+   }
+
+   @media (max-width: 1200px) {
+      padding: 1.5% 5%;
+   }
+
+   @media (max-width: 900px) {
+      padding: 3% 10%;
+
+      .logo {
+         h1 {
+            font-size: 30px;
+         }
+      }
+
+      ul {
+         li {
+            display: none;
+         }
+      }
+
+
+      .light {
+         font-size: 30px;
+      }
+
+      .button {
+         font-size: 18px;
+      }
+
+      .menu_mobile {
+         display: flex;
+         color: $header-color;
+         font-size: 25px;
+
+
+         .menu1 {
+            opacity: 0;
+            top: 5rem;
+            right: 10%;
+            pointer-events: none;
+            position: fixed;
+            transition: all 0.3s ease-in-out;
+
+            &.open {
+               display: flex;
+               opacity: 1;
+               pointer-events: all;
+               color: $header-color;
+               text-align: right;
+            }
+
+            &.open ul {
+               display: flex;
+               flex-direction: column;
+               gap: 20px;
+               align-items: flex-end;
+            }
+
+            &.open li {
+               display: flex;
+               padding-left: 0;
+               align-items: center;
+               justify-content: right;
+
+               a {
+                  font-size: 25px;
+               }
+            }
+
+
+         }
+      }
+   }
+
+   .bg-menu_mobile.show:before {
+      transform: scale(25);
+   }
+
+   .bg-menu_mobile::before {
+      content: "";
+      position: fixed;
+      z-index: -1;
+      top: -16px;
+      right: -16px;
+      background: $footer-color;
+      height: 32px;
+      width: 32px;
+      border-radius: 32px;
+      transform: scale(0);
+      transform-origin: 50% 50%;
+      transition: transform 0.3s ease-out;
+
+   }
+
+   @media (max-width: 500px) {
+      .logo {
+         h1 {
+            font-size: 25px;
+            z-index: 100;
+         }
+      }
+
+      padding: 5% 10%;
+
+      .light {
+         font-size: 25px;
+      }
+
+      .button {
+         font-size: 15px;
+      }
+
+      .menu_mobile {
+         display: flex;
+         color: $header-color;
+         font-size: 22px;
+
+         &.menu1 {
+            &.open {
+               position: absolute;
+               top: 5rem;
+               right: 10%;
+               width: 100%;
+               z-index: 10;
+            }
+
+            .open ul {
+               display: flex;
+               flex-direction: column;
+               gap: 16px;
+            }
+
+            .open li {
+               display: flex;
+               padding-left: 0;
+               align-items: center;
+               justify-content: right;
+
+               a {
+                  font-size: 18px;
+               }
+            }
+
+            .bg-menu_mobile.show:before {
+               transform: scale(24);
+            }
+
+            .bg-menu_mobile.show:before {
+               position: absolute;
+            }
+         }
+      }
+   }
+
+   @media (max-width: 400px) {
+      .botoes {
+         display: flex;
+         align-items: center;
+         gap: 8px;
+
+         .button {
+            display: none;
+         }
+
+         .button1 {
+            display: flex;
+         }
+      }
+   }
+}

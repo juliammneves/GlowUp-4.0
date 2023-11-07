@@ -1,0 +1,119 @@
+@import '_colors';
+
+.box-dash {
+   padding-top: 7rem;
+   
+
+   a {
+      color: $accent-color;
+      transition: all .3s ease-in-out;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-bottom: 10px;
+
+      &:hover {
+         gap: 10px;
+      }
+
+   }
+
+   .blocos {
+      display: flex;
+      gap: 50px;
+
+      .bloco {
+         height: 8rem;
+         position: relative;
+         text-align: center;
+         border-radius: 20px;
+         justify-content: space-between;
+         margin: 40px 0;
+         
+
+         .icon {
+            font-size: 50px;
+         }
+
+         .bolinha-vermelha {
+            height: 20px;
+            width: 20px;
+            background-color: #bd0000;
+            border-radius: 50%;
+         }
+
+         .bolinha {
+            height: 20px;
+            width: 20px;
+            background-color: green;
+            border-radius: 50%;
+            animation-name: bolinha;
+            animation-delay: 2s;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+         }
+
+         @keyframes bolinha {
+            0% {
+               width: 20px;
+               height: 20px;
+            }
+
+            50% {
+               width: 25px;
+               height: 25px;
+            }
+         }
+
+         span {
+            padding-top: 10px;
+            display: flex;
+            margin: auto;
+            font-size: 32px;
+            font-weight: 700;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            .text-on {
+               color: green;
+            }
+
+            .text-off {
+               color: #bd0000;
+            }
+         }
+      }
+
+      @media (max-width: 900px) {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: 1fr 1fr;
+         row-gap: 0;
+
+         .bloco{
+            width: 100%;
+            margin: 30px 0;
+         }
+      }
+      @media (max-width: 500px) {
+         display: flex;
+         flex-direction: column;
+
+         .bloco{
+            width: 100%;
+            margin: 30px 0;
+         }
+      }
+   }
+
+
+   .tabela {
+      height: 230px;
+      overflow: auto;
+   }
+
+
+}
+

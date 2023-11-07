@@ -1,0 +1,204 @@
+@import '_colors';
+
+$color_1: var(--accent-color);
+$color_2: var(--header-color);
+$color_3: gray;
+$background-color_1: var(--footer-color);
+$background-color_2: #49494977;
+$background-color_3: #5a5a5a91;
+$background-color_4: transparent;
+$background-color_5: var(--accent-color);
+
+.Contato {
+	padding: 5% 10%;
+	background-color: $background-color_1;
+	height: 48rem;
+	.linha {
+		hr {
+			height: 2px;
+			border: none;
+			background: #49494977;
+			margin-top: 5%;
+		}
+	}
+	.box7 {
+		display: flex;
+		hr {
+			margin: 0 10% 0 3%;
+			width: 3px;
+			border: none;
+			background: #49494977;
+		}
+		.text {
+			text-align: center;
+			margin: auto 0;
+			h1 {
+				font-size: 70px;
+				color: $color_1;
+				font-weight: 700;
+				line-height: 65px;
+			}
+			h4 {
+				font-size: 20px;
+				font-weight: 600;
+				color: $color_2;
+				margin-top: 20px;
+			}
+			a {
+				color: $color_1;
+				font-weight: 500;
+				text-decoration: underline;
+				margin-left: 5px;
+			}
+		}
+	}
+	.box_contato {
+		width: 62rem;
+		h1 {
+			font-size: 50px;
+			color: $color_2;
+			font-weight: 700;
+			line-height: normal;
+			span {
+				color: $color_1;
+			}
+		}
+		h2 {
+			color: $color_2;
+		}
+		.btn1 {
+			width: 100%;
+			grid-column: span 2;
+			padding: 0.75rem 2rem;
+			background-color: $background-color_4;
+			color: $color_1;
+			font-size: 20px;
+			font-weight: 600;
+			border: 5px solid var(--accent-color);
+			border-radius: 30px;
+			cursor: pointer;
+			transition: 0.3s;
+			&:hover {
+				background-color: $background-color_5;
+				color: $color_2;
+			}
+		}
+	}
+	.contact-form {
+		display: grid;
+		margin-top: 2rem;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 1.5rem;
+		row-gap: 1.5rem;
+		max-width: 32rem;
+	}
+	.input-wrap {
+		position: relative;
+		label {
+			position: absolute;
+			top: 50%;
+			left: calc(1.35rem + 2px);
+			transform: translateY(-50%);
+			color: $color_3;
+			font-weight: 900;
+			font-size: 16px;
+			pointer-events: none;
+			transition: 0.3s;
+		}
+		.icon {
+			position: absolute;
+			right: calc(1.35rem + 2px);
+			top: 50%;
+			transform: translateY(-50%);
+			color: $color_3;
+			pointer-events: none;
+			font-size: 1.25rem;
+		}
+	}
+	.input-wrap.w-100 {
+		grid-column: span 2;
+	}
+	.contact-input {
+		width: 100%;
+		background-color: $background-color_2;
+		border: none;
+		outline: none;
+		padding: 1.5rem 1.35rem 0.5rem 1.35rem;
+		border-radius: 20px;
+		color: $color_2;
+		font-size: 18px;
+		font-weight: 700;
+		border: 3px solid transparent;
+		transition: 0.3s;
+		&:hover {
+			background-color: $background-color_3;
+		}
+	}
+	textarea.contact-input {
+		resize: none;
+		width: 100%;
+		min-height: 100px;
+	}
+	textarea.contact-input~label {
+		top: 1.2rem;
+		transform: none;
+	}
+	textarea.contact-input~.icon {
+		top: 1.2rem;
+		transform: none;
+	}
+	.input-wrap.focus {
+		.contact-input {
+			background-color: $background-color_3;
+			border: 3px solid var(--accent-color);
+		}
+		label {
+			color: $color_1;
+			letter-spacing: 3px;
+		}
+		.icon {
+			color: $color_1;
+		}
+	}
+	.input-wrap.not-empty {
+		label {
+			font-size: .66rem;
+			top: 0.75rem;
+			transform: translateY(0);
+		}
+	}
+}
+@media (max-width: 900px) {
+	.Contato {
+		margin-top: 5rem;
+		.box7 {
+			hr {
+				display: none;
+			}
+			.text {
+				display: none;
+			}
+			align-items: center;
+			justify-content: center;
+			.contact-form {
+				max-width: none;
+			}
+		}
+	}
+}
+@media (max-width: 500px) {
+	.Contato {
+		.contact-form {
+			display: flex;
+			flex-direction: column;
+		}
+		.box_contato {
+			h1 {
+				font-size: 32px;
+			}
+			h2 {
+				font-size: 20px;
+			}
+		}
+	}
+}
