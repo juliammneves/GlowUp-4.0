@@ -1,3 +1,5 @@
+@import '_colors';
+
 .Blog {
    .box1 {
       margin: 4% 10% 0px 10%;
@@ -5,12 +7,14 @@
       flex-direction: column;
       padding: 50px;
       border-radius: 25px;
+      box-shadow: var(--box-shadow-1);
 
       .title {
          display: flex;
          align-items: center;
          margin: 0 5% 40px 5%;
          justify-content: space-between;
+         color: var(--secundary-color);
       }
 
       img {
@@ -25,6 +29,7 @@
       font-size: 50px;
       margin-top: 8%;
       text-align: center;
+      color: $accent-color;
    }
 
    .blog3 {
@@ -46,6 +51,7 @@
          text-align: left;
          text-transform: none;
          letter-spacing: normal;
+         color: var(--secundary-color);
       }
    }
 
@@ -58,12 +64,14 @@
 
       .icon {
          margin-right: 10px;
+         color: $accent-color;
       }
    }
 
    .botao {
       text-align: center;
       text-decoration: underline;
+      color: var(--secundary-color);
 
       label {
          cursor: pointer;
@@ -79,6 +87,7 @@
          opacity: 0.5;
          margin: 0 5% 25px 5%;
          margin-bottom: 25px;
+         color: var(--secundary-color);
       }
 
       input {
@@ -96,10 +105,8 @@
          text-decoration: underline;
       }
    }
-}
 
-@media (max-width: 900px) {
-   .Blog {
+   @media (max-width: 900px) {
       .box1 {
          margin: 8% 10% 0px 10%;
          padding: 50px 20px;
@@ -139,10 +146,8 @@
          font-size: 14px;
       }
    }
-}
 
-@media (max-width: 500px) {
-   .Blog {
+   @media (max-width: 500px) {
       .box1 {
          margin: 8% 5% 0px 5%;
          padding: 45px 18px;

@@ -167,6 +167,10 @@ nav {
          color: $header-color;
          font-size: 25px;
 
+         .icon{
+            cursor: pointer;
+         }
+
 
          .menu1 {
             opacity: 0;

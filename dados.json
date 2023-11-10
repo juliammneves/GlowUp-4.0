@@ -1,0 +1,164 @@
+{
+   "sensorData": [
+      {
+         "id": 20,
+         "hora": "06:30",
+         "sensorStatus": "On",
+         "movementStatus": "Não",
+         "lightStrength": "Baixa",
+         "ambiente": "Claro"
+      },
+      {
+         "id": 19,
+         "hora": "05:30",
+         "sensorStatus": "On",
+         "movementStatus": "Sim",
+         "lightStrength": "Média",
+         "ambiente": "Escuro"
+      },
+      {
+         "id": 18,
+         "hora": "04:30",
+         "sensorStatus": "On",
+         "movementStatus": "Não",
+         "lightStrength": "Média",
+         "ambiente": "Escuro"
+      },
+      {
+         "id": 17,
+         "hora": "03:30",
+         "sensorStatus": "On",
+         "movementStatus": "Não",
+         "lightStrength": "Média",
+         "ambiente": "Escuro"
+      },
+      {
+         "id": 16,
+         "hora": "02:30",
+         "sensorStatus": "On",
+         "movementStatus": "Não",
+         "lightStrength": "Média",
+         "ambiente": "Escuro"
+      },
+      {
+         "id": 15,
+         "hora": "01:30",
+         "sensorStatus": "Off",
+         "movementStatus": "-",
+         "lightStrength": "-",
+         "ambiente": "-"
+      },
+      {
+         "id": 14,
+         "hora": "00:30",
+         "sensorStatus": "On",
+         "movementStatus": "Não",
+         "lightStrength": "Média",
+         "ambiente": "Escuro"
+      },
+      {
+         "id": 13,
+         "hora": "23:30",
+         "sensorStatus": "On",
+         "movementStatus": "Sim",
+         "lightStrength": "Alta",
+         "ambiente": "Escuro"
+      },
+      {
+         "id": 12,
+         "hora": "22:30",
+         "sensorStatus": "Off",
+         "movementStatus": "-",
+         "lightStrength": "-",
+         "ambiente": "-"
+      },
+      {
+         "id": 11,
+         "hora": "21:30",
+         "sensorStatus": "On",
+         "movementStatus": "Sim",
+         "lightStrength": "alta",
+         "ambiente": "Escuro"
+      },
+      {
+         "id": 10,
+         "hora": "20:30",
+         "sensorStatus": "On",
+         "movementStatus": "Não",
+         "lightStrength": "Média",
+         "ambiente": "Escuro"
+      },
+      {
+         "id": 9,
+         "hora": "19:30",
+         "sensorStatus": "On",
+         "movementStatus": "Sim",
+         "lightStrength": "Alta",
+         "ambiente": "Escuro"
+      },
+      {
+         "id": 8,
+         "hora": "18:30",
+         "sensorStatus": "On",
+         "movementStatus": "Não",
+         "lightStrength": "Média",
+         "ambiente": "Escuro"
+      },
+      {
+         "id": 7,
+         "hora": "17:30",
+         "sensorStatus": "Off",
+         "movementStatus": "-",
+         "lightStrength": "-",
+         "ambiente": "-"
+      },
+      {
+         "id": 6,
+         "hora": "16:30",
+         "sensorStatus": "On",
+         "movementStatus": "Sim",
+         "lightStrength": "Baixa",
+         "ambiente": "Claro"
+      },
+      {
+         "id": 5,
+         "hora": "15:30",
+         "sensorStatus": "On",
+         "movementStatus": "Sim",
+         "lightStrength": "Baixa",
+         "ambiente": "Claro"
+      },
+      {
+         "id": 4,
+         "hora": "14:30",
+         "sensorStatus": "Off",
+         "movementStatus": "-",
+         "lightStrength": "-",
+         "ambiente": "-"
+      },
+      {
+         "id": 3,
+         "hora": "13:30",
+         "sensorStatus": "Off",
+         "movementStatus": "-",
+         "lightStrength": "-",
+         "ambiente": "-"
+      },
+      {
+         "id": 2,
+         "hora": "12:30",
+         "sensorStatus": "On",
+         "movementStatus": "Sim",
+         "lightStrength": "Baixa",
+         "ambiente": "Claro"
+      },
+      {
+         "id": 1,
+         "hora": "11:30",
+         "sensorStatus": "On",
+         "movementStatus": "Não",
+         "lightStrength": "Baixa",
+         "ambiente": "Claro"
+      }
+   ]
+}

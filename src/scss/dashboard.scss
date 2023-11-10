@@ -3,7 +3,6 @@
 .box-dash {
    padding-top: 7rem;
    
-
    a {
       color: $accent-color;
       transition: all .3s ease-in-out;
@@ -29,8 +28,8 @@
          border-radius: 20px;
          justify-content: space-between;
          margin: 40px 0;
+         box-shadow: var(--box-shadow-1);
          
-
          .icon {
             font-size: 50px;
          }
@@ -108,12 +107,22 @@
       }
    }
 
-
    .tabela {
-      height: 230px;
+      height: 394px;
       overflow: auto;
+
+      &::-webkit-scrollbar {
+         width: 8px;
+     }
+     
+     &::-webkit-scrollbar-track {
+         overflow-x: hidden;
+         background-color: var(--scroll-color);
+     }
+     
+     &::-webkit-scrollbar-thumb {
+         background-color: var(--accent-color);
+     }
    }
-
-
 }
 

@@ -2,3 +2,62 @@ $accent-color: #ff8c00;
 $header-color: #F9F9F9;
 $footer-color: #2E2E2E;
 $footer-text: #9999999e;
+$behind-color: #d3d3d325;
+
+:root {
+   --header-color: #F9F9F9;
+   --main-color: #F9F9F9;
+   --secundary-color: #2E2E2E;
+   --accent-color: #ff8c00;
+   --accent-color-hover: #e67e00;
+   --scroll-color: #d4d4d487;
+   --sub-color: #d4d4d4;
+   --footer-text: #9999999e;
+   --footer-color: #2E2E2E;
+   --behind-color: #d3d3d336;
+   --pop-up: #49494977;
+   --login-color: #e8e8e877;
+
+   --box-shadow-1: 25px 25px 50px #cacaca;
+}
+
+
+
+body.dark {
+   --main-color: #2E2E2E;
+   /* #1c1c1c */
+   --secundary-color: #F9F9F9;
+   --accent-color: #ff8c00;
+   --accent-color-hover: #e67e00;
+   --scroll-color: #393939;
+   --sub-color: #505050;
+   --footer-text: #9999999e;
+   --behind-color: #d3d3d325;
+   --pop-up: #6e6e6e77;
+   --login-color: #49494977;
+
+   --box-shadow-1: 27px 27px 54px #252525,
+       -27px -27px 54px #373737;
+
+   background-color: var(--main-color);
+
+
+   .Home .box3 .colunas .case {
+      background: rgba(46, 46, 46, 0.6);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border: 1px solid rgba(46, 46, 46, 0.3);
+   }
+
+   .Home .box5 .recursos {
+      background: rgba(46, 46, 46, 0.6);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border: 1px solid rgba(46, 46, 46, 0.3);
+  }
+}
+

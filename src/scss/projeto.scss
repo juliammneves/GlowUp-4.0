@@ -1,0 +1,167 @@
+@import '_colors';
+
+.Projeto {
+   .section1 {
+      p {
+         font-size: 18px;
+      }
+   }
+
+   .section2 {
+      img {
+         width: 50%;
+         height: 30rem;
+         border-radius: 10px;
+      }
+
+      .text {
+         width: 40%;
+      }
+   }
+
+   .linha {
+      width: 2px;
+      transition: all .3s ease-in-out;
+      background-color: var(--login-color);
+   }
+
+   .section3 {
+      h1 {
+         text-align: center;
+         margin-bottom: 5%;
+      }
+
+      img {
+         height: 13rem;
+         width: 100%;
+         border-radius: 8px;
+      }
+
+      .box {
+         display: flex;
+         justify-content: space-between;
+      }
+
+      .casos {
+         width: 28%;
+         border-radius: 25px;
+
+         h2 {
+            padding: 10px;
+            padding-left: 0;
+         }
+
+         p {
+            font-size: 16px;
+         }
+      }
+   }
+
+   .section4 {
+      text-align: center;
+      background-color: $accent-color;
+
+      h1 {
+         margin-bottom: 3%;
+         color: $header-color;
+      }
+
+      p {
+         color: $header-color;
+      }
+   }
+
+   @media (max-width: 900px) {
+      .section1 p {
+         font-size: 15px;
+      }
+
+      .linha {
+         width: 100%;
+         height: 2px;
+      }
+
+      .section3 {
+         h1 {
+            text-align: center;
+            margin-bottom: 5%;
+         }
+
+         img {
+            height: auto;
+            width: 40%;
+            border-radius: 8px;
+         }
+
+         .box {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+         }
+
+         .casos {
+            display: flex;
+            width: 100%;
+            border-radius: 25px;
+            gap: 5%;
+
+            h2 {
+               padding: 0 0 10px 0;
+            }
+
+            p {
+               font-size: 16px;
+            }
+         }
+      }
+   }
+
+   @media (max-width: 600px) {
+      .section1 p {
+         font-size: 16px;
+      }
+
+      .section2 .text {
+         width: 100%;
+      }
+
+      .linha {
+         width: 2px;
+         transition: all .3s ease-in-out;
+      }
+
+      .section3 {
+
+         h1 {
+            text-align: center;
+            margin-bottom: 5%;
+         }
+
+         img {
+            width: 100%;
+            border-radius: 8px;
+         }
+
+         .box {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+         }
+
+         .casos {
+            flex-direction: column;
+            width: 100%;
+            border-radius: 25px;
+            gap: 10px;
+
+            h2 {
+               padding: 0 0 10px 0;
+            }
+
+            p {
+               font-size: 16px;
+            }
+         }
+      }
+   }
+}

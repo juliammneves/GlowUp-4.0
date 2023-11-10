@@ -3,9 +3,7 @@ import { Link } from 'react-router-dom';
 import login_amico from '../images/Login.png';
 import signUp_amico from '../images/SignUp.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faFacebook, faXTwitter, faGoogle } from '@fortawesome/free-brands-svg-icons';
 import { faUser, faLock, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import Dashboard from './Dashboard'
 
 function Login() {
   const [isSignUp, setIsSignUp] = useState(false);
@@ -15,7 +13,7 @@ function Login() {
     localStorage.getItem('authenticatedUser') || ''
   );
 
-  const [inputFocus, setInputFocus] = useState(false); 
+  const [inputFocus, setInputFocus] = useState(false);
   const [focusedInput, setFocusedInput] = useState(null);
 
 
@@ -133,16 +131,16 @@ function Login() {
   };
 
 
-    const handleFocus = (inputName) => {
-      setFocusedInput(inputName);
-    };
-  
-    const handleBlur = () => {
-      setFocusedInput(null);
-    };
+  const handleFocus = (inputName) => {
+    setFocusedInput(inputName);
+  };
 
-    
-  
+  const handleBlur = () => {
+    setFocusedInput(null);
+  };
+
+
+
 
   return (
     <div className={`container1 ${isSignUp ? 'sign-up-mode' : ''}`}>
@@ -151,14 +149,14 @@ function Login() {
           <h1>Bem-vindo(a), {authenticatedUser}!</h1>
 
           <Link to='Dashboard'>Dashboard</Link>
-          
+
           <button onClick={handleDeleteAccount} className='btn-excluir'>
             Excluir Conta
           </button>
           <button onClick={handleLogout} className='btn btn-logout'>
             Logout
           </button>
-         
+
         </div>
       ) : (
         <div className='signin-signup'>
@@ -167,6 +165,7 @@ function Login() {
             <div className={`input-field ${inputFocus ? 'focus' : ''}`}>
               <FontAwesomeIcon className='icon' icon={faUser} />
               <input
+                placeholder='.'
                 className='contact-input'
                 type='text'
                 value={loginData.username}
@@ -179,6 +178,7 @@ function Login() {
             <div className={`input-field ${inputFocus ? 'focus' : ''}`}>
               <FontAwesomeIcon className='icon' icon={faLock} />
               <input
+                placeholder='.'
                 className='contact-input'
                 type='password'
                 value={loginData.password}
@@ -195,6 +195,7 @@ function Login() {
             <div className='input-field'>
               <FontAwesomeIcon className='icon' icon={faUser} />
               <input
+                placeholder='.'
                 className='contact-input'
                 type='text'
                 value={signupData.username}
@@ -205,6 +206,7 @@ function Login() {
             <div className='input-field'>
               <FontAwesomeIcon className='icon' icon={faEnvelope} />
               <input
+                placeholder='.'
                 className='contact-input'
                 type='text'
                 value={signupData.email}
@@ -215,6 +217,7 @@ function Login() {
             <div className='input-field'>
               <FontAwesomeIcon className='icon' icon={faLock} />
               <input
+                placeholder='.'
                 className='contact-input'
                 type='password'
                 value={signupData.password}

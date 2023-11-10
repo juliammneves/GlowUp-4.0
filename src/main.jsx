@@ -19,6 +19,12 @@ import './scss/blog.scss'
 import './scss/contato.scss'
 import './scss/notFound.scss'
 import './scss/dashboard.scss'
+import './scss/sobre.scss'
+import './scss/projeto.scss'
+import './scss/login.scss'
+import './scss/home.scss'
+import './scss/_global.scss'
+import './scss/_colors.scss'
 
 const router = createBrowserRouter([
   {
