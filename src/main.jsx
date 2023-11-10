@@ -12,7 +12,6 @@ import Login from './components/Login';
 import Dashboard from './components/Dashboard.jsx';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
-import './styles/index.css'
 import './scss/navbar.scss'
 import './scss/footer.scss'
 import './scss/blog.scss'

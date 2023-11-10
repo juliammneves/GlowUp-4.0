@@ -156,7 +156,7 @@
             border-radius: 50%;
             font-size: 22px;
             color: $accent-color;
-            background-color: $behind-color;
+            background-color: var(--behind-color);
          }
       }
    }

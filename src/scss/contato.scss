@@ -1,17 +1,8 @@
 @import '_colors';
 
-$color_1: var(--accent-color);
-$color_2: var(--header-color);
-$color_3: gray;
-$background-color_1: var(--footer-color);
-$background-color_2: #49494977;
-$background-color_3: #5a5a5a91;
-$background-color_4: transparent;
-$background-color_5: var(--accent-color);
-
 .Contato {
 	padding: 5% 10%;
-	background-color: $background-color_1;
+	background-color: $footer-color;
 	height: 48rem;
 	.linha {
 		hr {
@@ -34,18 +25,18 @@ $background-color_5: var(--accent-color);
 			margin: auto 0;
 			h1 {
 				font-size: 70px;
-				color: $color_1;
+				color: $accent-color;
 				font-weight: 700;
 				line-height: 65px;
 			}
 			h4 {
 				font-size: 20px;
 				font-weight: 600;
-				color: $color_2;
+				color: $header-color;
 				margin-top: 20px;
 			}
 			a {
-				color: $color_1;
+				color: $accent-color;
 				font-weight: 500;
 				text-decoration: underline;
 				margin-left: 5px;
@@ -56,31 +47,31 @@ $background-color_5: var(--accent-color);
 		width: 62rem;
 		h1 {
 			font-size: 50px;
-			color: $color_2;
+			color: $header-color;
 			font-weight: 700;
 			line-height: normal;
 			span {
-				color: $color_1;
+				color: $accent-color;
 			}
 		}
 		h2 {
-			color: $color_2;
+			color: $header-color;
 		}
 		.btn1 {
 			width: 100%;
 			grid-column: span 2;
 			padding: 0.75rem 2rem;
-			background-color: $background-color_4;
-			color: $color_1;
+			background-color: transparent;
+			color: $accent-color;
 			font-size: 20px;
 			font-weight: 600;
-			border: 5px solid var(--accent-color);
+			border: 5px solid $accent-color;
 			border-radius: 30px;
 			cursor: pointer;
 			transition: 0.3s;
 			&:hover {
-				background-color: $background-color_5;
-				color: $color_2;
+				background-color: $accent-color;
+				color: $header-color;
 			}
 		}
 	}
@@ -99,7 +90,7 @@ $background-color_5: var(--accent-color);
 			top: 50%;
 			left: calc(1.35rem + 2px);
 			transform: translateY(-50%);
-			color: $color_3;
+			color: gray;
 			font-weight: 900;
 			font-size: 16px;
 			pointer-events: none;
@@ -110,7 +101,7 @@ $background-color_5: var(--accent-color);
 			right: calc(1.35rem + 2px);
 			top: 50%;
 			transform: translateY(-50%);
-			color: $color_3;
+			color: gray;
 			pointer-events: none;
 			font-size: 1.25rem;
 		}
@@ -120,18 +111,18 @@ $background-color_5: var(--accent-color);
 	}
 	.contact-input {
 		width: 100%;
-		background-color: $background-color_2;
+		background-color: var(--pop-up);
 		border: none;
 		outline: none;
 		padding: 1.5rem 1.35rem 0.5rem 1.35rem;
 		border-radius: 20px;
-		color: $color_2;
+		color: $header-color;
 		font-size: 18px;
 		font-weight: 700;
 		border: 3px solid transparent;
 		transition: 0.3s;
 		&:hover {
-			background-color: $background-color_3;
+			background-color: #5a5a5a91;
 		}
 	}
 	textarea.contact-input {
@@ -149,15 +140,15 @@ $background-color_5: var(--accent-color);
 	}
 	.input-wrap.focus {
 		.contact-input {
-			background-color: $background-color_3;
-			border: 3px solid var(--accent-color);
+			background-color: #5a5a5a91;
+			border: 3px solid $accent-color;
 		}
 		label {
-			color: $color_1;
+			color: $accent-color;
 			letter-spacing: 3px;
 		}
 		.icon {
-			color: $color_1;
+			color: $accent-color;
 		}
 	}
 	.input-wrap.not-empty {
